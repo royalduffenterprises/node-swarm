@@ -1,0 +1,31 @@
+{
+  "name": "field-dailies-serverless",
+  "version": "0.0.0",
+  "description": "This is the Field Dailies serverless applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha --require ./test/utils/bootstrap.js --recursive",
+    "eslint": "node ./node_modules/eslint/bin/eslint.js . --ext .js",
+    "eslint-fix": "node ./node_modules/eslint/bin/eslint.js . --ext .js --fix"
+  },
+  "author": "euclidthedark",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "chai-as-promised": "7.1.1",
+    "chai-things": "0.2.0",
+    "eslint": "5.10.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-react": "7.11.1",
+    "mocha": "5.2.0",
+    "proxyquire": "2.1.0",
+    "sinon": "7.1.1",
+    "sinon-chai": "3.3.0"
+  },
+  "dependencies": {
+    "bluebird": "3.5.3"
+  }
+}

@@ -1,0 +1,42 @@
+{
+    "extends": ["react-app", "airbnb"],
+    "env": {
+        "mocha": true,
+        "node": true
+      },
+      "rules": {
+        "no-unused-vars": [
+          "error",
+          {
+            "varsIgnorePattern": "should|expect"
+          }
+        ],
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+              "varsIgnorePattern": "should|expect"
+            }
+          ]
+      },
+      "overrides": [
+        {
+          "files": ["*.test.js"],
+          "rules": {
+            "func-names": "off",
+            "prefer-arrow-callback": "off",
+            "no-undef": [
+                "off",
+                {
+                    "varsIgnorePattern": "expect"
+                }
+            ]
+          }
+        },
+        {
+          "files": ["./src/containers/**/*.js"],
+          "rules": {
+            "class-methods-use-this": "off"
+          }
+        }
+      ]
+}

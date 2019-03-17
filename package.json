@@ -1,0 +1,13 @@
+{
+  "name": "node",
+  "version": "0.0.0",
+  "description": "This is a swarm repository scaffold.",
+  "main": "index.js",
+  "scripts": {
+    "start": "docker-compose up",
+    "nuke-docker": "sh ./scripts/nuke-docker.sh",
+    "test": "test"
+  },
+  "author": "euclidthedark",
+  "license": "ISC"
+}
